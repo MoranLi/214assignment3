@@ -22,12 +22,12 @@ typedef struct{
 // ... (Vector *v, int order... ) {
 //  ... v->Elem[oeder] ...
 // }
-const int MAX_ARRAY = 65536; // Value chosen based on needs
+const int MAX_ELEMS = 65536; // Value chosen based on needs
                              // type int chosen because the constant
                              // is used to compare against variables of
                              // type int.
 
-const int MIN_ARRAY = 0;     // Value chosen based on needs
+const int MIN_ELEMS = 0;     // Value chosen based on needs
                              // type int chosen because the constant
                              // is used to compare against variables of
                              // type int.

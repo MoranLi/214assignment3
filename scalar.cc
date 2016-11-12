@@ -54,7 +54,7 @@ Vector *scalar_minus(Vector *vectorArray, Elem a){
 Vector *scalar_mult(Vector *vectorArray, Elem a){
     //multiple a to each Elem in Elements
     for(int i=0;i<(vectorArray->size);i++){
-        vectorArray->Elements[i] = vectorArray->Elements[i] * a;
+        vectorArray->Elements[i] = (vectorArray->Elements[i]) * a;
     }
     return vectorArray;
 }

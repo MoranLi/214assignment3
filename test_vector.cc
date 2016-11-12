@@ -1,4 +1,7 @@
- 
+#include<stdio.h>
+#include<assert.h>
+
+#include"vector.h"
 
 // main:
 //   Program entry point
@@ -8,16 +11,12 @@
 // Out:
 //   return -- EXIT_SUCCESS if program terminates normally,
 //             EXIT_FAILURE otherwise
-bool main(int argc, char* argv[]){
+int main(int argc, char* argv[]){
 #ifdef TESTING
         const int TEST_SIZE = 3;
         const float TEST_ELEM1 = 4;
         const float TEST_ELEM2 = 3.33333;
         const float TEST_ELEM3 = 2;
-        const float TEST_PLUS = 2;
-        const float TEST_MINUS = 1;
-        const float TEST_MULT = 2;
-        const float TEST_DIV = 3;
 
         // Testing for alloc_vec
         Vector *temp_vec = alloc_vec();
@@ -42,5 +41,6 @@ bool main(int argc, char* argv[]){
         // done
         dealloc_vec(temp_vec);
         //return success
-        return true;
+        return 0;
+#endif
 }

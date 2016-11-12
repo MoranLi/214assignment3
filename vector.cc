@@ -56,7 +56,7 @@ void dealloc_vec(Vector *a_vector){
 //   effect -- print the content of a_vector
 bool print_vec(Vector *vectorArray){
         //check if parameter is empty or null
-        if(0 < vectorArray->size){
+        if(0 < vectorArray->size || vectorArray == NULL){
         //traverse all Elem in Elements, print them
         for(int i=0;i<(vectorArray->size);i++){
                 printf("%f ",vectorArray->Elements[i]);
@@ -82,7 +82,7 @@ Vector *extend_vec(Vector *vectorArray, Elem a){
     // increase new Vector`s size
     vectorArray2->size = vectorArray2->size+1;
     // check if array size over limit
-        if( MAX_ARRAY <= vectorArray2->size ){
+    if( MAX_ELEMS <= vectorArray2->size ){
         printf("vecalc: max vector size exceeded\n");
         return vectorArray;
     }

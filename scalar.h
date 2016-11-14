@@ -4,8 +4,8 @@
 
 #include "vector.h"
 
-#ifndef _VECTOR_H_
-#define _VECTOR_H_
+#ifndef _SCALAR_H_
+#define _SCALARß_H_
 
 
 
